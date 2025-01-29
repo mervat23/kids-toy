@@ -1,0 +1,679 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   height: 2000px;
+   perspective: 700px; 
+   color: white;
+}
+
+header{
+ height: 50px;
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+}
+
+header, .child-list, .section1, .section3-icons, .section4,.section6, .section8{
+  background-color: purple;
+}
+
+header ,.section1-part1, .section1, .section1-parent, .section1-image img,
+.section2, .section2-div1 img, .section5-div1 img, .section6, .section6-parent
+,.section6-div1, .section6-div1 img{
+  width: 100%;
+}
+
+header, .header-image, nav .list, .child-list,header .list-item:hover .child-list, 
+.section1-parent, .section3-icons, .section3-icons a, .section4-content2,.section5-parent
+,.section6-parent, .section7, .section8-part1, .section8-div4, .section8-div5,
+.section2, .section3{
+  display: flex;
+}
+
+header, .section1-p2, .section2 a, .section3-span, .section3-span1, .section4-p3
+,.section6-p, .section8-btn, .section8-div5 a, .section8-p1{
+  font-size: 12px;
+}
+
+header .image{
+   width: 35px; 
+   height: 35px;
+}
+
+header .image, .header-number, .section4-content2 img{
+  border-radius: 50%;
+}
+
+.header-icons{
+  margin-bottom: 10px;
+}
+
+header .p1, header .header-icons .i1, .section4-content3{
+ margin-left: 10px;   
+}
+
+header .p1, nav .list li a, .list-title, header .header-icons .i1, .section1-p1, .section1-title
+,.section1-btn:hover, .section2-title, .section2 a, .section3-icons a, .section4-parent, .section6,
+.section6 a, .section8, .section8-part1 i, .section8-part2 a,.section8-a2, .section8-a2:hover{
+  color: white; 
+}
+
+header .p1, .list-li1{
+  margin-top: 8px;
+}
+
+.header-number{
+  width: 13px;
+  height: 13px;
+  margin-left: 60px;
+  margin-bottom: -2px;
+} 
+
+.header-number, .section1-part1, .section1-btn,.section8-btn{
+  background-color: white;
+}
+
+.header-number, .section1-part1-p, .section1-content, .section2-content, .section3-icons a,
+.section4-content1, .section5-title, .section5-parent, .section6-title, .section7, .section3,
+.section8-p1{
+  text-align: center;
+}
+
+.header-number, .section1-part1-p, .section1-btn, .section3-title
+,.section3-span, .section3-icons a:hover, .section5-title, .section7-div1 a,
+.section7 .section7-title,.section7-div1 p,.section8-btn, .part1-a:hover{
+  color: purple;
+}
+
+header .header-icons .i2:hover {
+ margin-top: 1px;
+}
+
+nav .list, .child-list{
+  list-style: none;
+}
+
+nav .list .list-item1{
+    margin-left: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav .list .list-item1, .section3-div1, .section3-icons a, .section5-div1, .section2-div1,
+.section8-div2 .section8-input{
+  position: relative;
+
+}
+
+nav .list .list-a::before{
+  content: "";
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  transition: 0.5s;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+
+}
+
+nav .list .list-a:hover::before{
+  height: 100%;
+}
+
+nav .list .list-a::after{
+  content: "";
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: 0.5s;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+nav .list .list-a:hover::after{
+  width:100%;
+
+}
+
+nav .list li a, .section8-part2 a,.section8-a2, .section3-icons a{
+  text-decoration: none;  
+}
+
+nav .list li a,.section1-part1-p, .section1-p1, .section1-title, .section2-title
+,.section2 a,.section3-title, .section4-content1 .section4-title1,
+.section4-content3 .section4-title2,.section5-title,.section6-title
+,.section6 a,.section7 .section7-title,.section8-part1 .section8-part1-title,
+.section8-btn,.section8-span1,.section8-span2,.section8-part2 h3,.list-title
+,.section8-part2 a,.section8-a2{
+  text-transform: capitalize; 
+}
+
+.child-list{
+  display: none;
+  left:-60px;
+  width: 200px;
+  height: 140px;
+  margin-top: 13px;
+  border-radius: 10px;
+}
+
+.child-list, .section2-content, .section3-icons, .section3-rotate, .section3-front,
+.section3-front,.section3-back, .section8-div2 input::placeholder{
+  position: absolute;
+}
+
+.child-list, .section3-front, .section3-div1:hover  .section3-icons, 
+.section5-div1:hover .section3-icons{
+  z-index: 1;
+}
+
+header .list-item:hover .child-list, .section2, .section5-parent, .section6-parent, .section8-div5{
+  justify-content: space-evenly;
+}
+
+.child-list li{
+  padding: 5px;
+}
+
+.list-title{
+  display: inline;
+  border-bottom: 1px dotted white;
+  padding-bottom: 4px;
+}
+
+.child-list li:hover {
+  transform: scale(1.2);
+}
+
+header .list a:hover,.child-list a:hover, header .header-icons .i1:hover, .section3-span1,
+.section5-div1:hover .section3-title,.section3-div1:hover .section3-title,
+.section6-div1-parent:hover .section6-title2, .section7-div1:hover a, 
+.section8-part1 i:hover, .section8-a2{
+  color:plum;
+}
+
+.header-list1{
+  padding-top: 15px;
+}
+
+.section1-part1{
+  height: 20px;
+  position: fixed;
+}
+
+.section1-part1-p{
+  font-size: 8px;
+  padding-top: 6px;
+}
+
+.section1, .section1-image{
+   height: 100vh;
+}
+
+.section1-parent{
+    flex-direction: row;
+}
+
+.section1-parent, .section3-icons{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section1-parent, .section1-image img, .section2-div1 img,.section3-div1 img,
+.section3-icons a, .section3-rotate, .section3-front,.section3-back, .section5-div1 img,
+.section6-div1, .section6-div1 img{
+  height: 100%;
+}
+
+.section1-content,.section1-image{
+  width: 45%; 
+}
+
+.section1-p1{
+  font-family:'Clicker Script',cursive;
+  font-size: 25px;
+}
+
+.section1-title{
+  font-size: 28px;
+  margin: 15px 0px;
+}
+
+.section1-p2{
+    color:rgba(255, 255, 255, 0.849);
+}
+
+.section1-para{
+  margin: 5px 0px;
+}
+
+.section1-para1, .section2-div1:hover  .section2-title{
+  margin-bottom: 20px;
+}
+
+.section1-btn{
+   padding: 10px 12px; 
+   text-transform: uppercase;
+   cursor: pointer;
+}
+
+.section1-btn, .section7-div1 p, .section8-div1 p{
+  font-size: 10px;
+
+}
+
+.section1-btn, .section8-div2 .section8-input, .section8-btn{
+  border: 0;
+
+}
+
+.section1-btn:hover{
+    background-color: plum;
+}
+
+.section2{
+  height: 400px;
+  align-items: center;
+}
+
+.section2-div1{
+  overflow: hidden;
+}
+
+.section2-div1,.section6-div1-parent{
+  width: 28%;
+}
+
+.section2-div1, .section3-div1, .section6-div1-parent, .section7{
+  height: 250px;
+}
+
+.section2, .section3-icons a,.section6-parent{
+  align-items: center;
+}
+
+.section2-div1 img, .section8-part2 a,.section8-a2{ 
+  transition:all 0.5s ;
+}
+
+.section2-content{
+  left: 33%;
+  top: 80%;
+}
+
+.section2-title, .section8-span1, .section8-span2{
+  font-size: 18px;
+}
+
+.section2 a, .section3-icons, .section3-rotate{
+  visibility: hidden;
+}
+
+.section2-div1:hover img{
+  transform: scale(1.05);
+}
+
+.section2-div1:hover  .section2-content{
+  top:70%;
+}
+
+.section3, .section3-icons a, .section8-div4{
+  justify-content:center;
+}
+
+.section3-div1{
+  width: 23.5%;
+}
+
+.section3-div1 img{ 
+  width: 95%;
+}
+
+.section3-title{
+  margin: 10px 0px;
+}
+
+.section3-title, .section4-p1, .section4-p2,.section4-content3 .section4-title2,
+.section6 a, .section7 .section7-title, .section8-part2 h3{
+  font-size: 13px;
+}
+
+.section3-span{
+  text-decoration: line-through;
+}
+
+.section3-icons{
+  top: 80%;
+  left: 25%;
+  width: 100px;
+  height: 25px;
+}
+
+.section3-icons a{
+  width: 34%;
+  justify-content: center; 
+}
+
+.section3-icons a, .section8-part1 .section8-part1-title, .section8-part1 i{
+  font-size: 15px;
+}
+
+.section3-icons a::before{
+  content: "";
+  position: absolute;
+  top:0; 
+  width:0;
+  height: 100%;
+  transition: 0.5s;
+  background-color:white;
+  z-index: -1;
+
+}
+
+.section3-icons a:hover::before{
+  width: 100%;
+}
+
+.section3-rotate{
+  transition: all 2s;
+  transform-style: preserve-3d; 
+  width: 98%;
+}
+
+.section3-front{
+    backface-visibility: hidden;
+    background-image: url(../images/image11.jpg);
+    background-size: cover;
+}
+
+.section3-front,.section3-back{
+  width: 97%;
+}
+
+.section3-back{
+  background-image: url(../images/image11.jpg);
+  background-size: cover;
+}
+
+.section3-back, .section3-rotate:hover{
+  transform: rotateY(180deg);  
+}
+
+.section2-div1:hover  a,.section3-div1:hover .section3-rotate, 
+.section3-div1:hover  .section3-icons,.section5-div1:hover .section3-icons{
+  visibility: visible;
+}
+
+.section4, .section6{
+  margin-top: 100px;
+  border-bottom: 1px solid orange;
+  border-top: 1px solid orange;
+}
+
+.section4-parent{
+  width: 80%;
+  margin: auto;
+  padding: 20px 0px;
+}
+
+.section4-content1 .section4-title1{
+ font-size: 22px;
+}
+
+.section4-content1 p{
+  line-height: 25px;
+}
+
+.section4-p1, .section8-part1{
+  padding-top: 20px;
+}
+
+.section4-p2{
+  padding-bottom: 20px; 
+}
+
+.section4-content2 {
+  width: 30%;
+  margin: auto;
+}
+
+.section4-content2 img{
+  width: 90px;
+  height: 90px;
+}
+
+.section4-content3 .section4-title2{
+  margin-top: 30px;
+}
+
+.section5{
+ margin-top: 70px;
+}
+
+.section5-parent,.section8-part1, .section8-part2{
+  width: 90%;
+  margin: auto;
+}
+
+.section5-div1{
+  width: 23%;
+  height: 230px;
+}
+
+.section5-title{
+  padding-bottom: 40px;
+}
+
+.section5-div1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: 1.5s;
+    background-image:url(../images/image7.jpg);
+    /* background-size: cover; */
+}
+
+.section5-div1:hover::after{
+    width: 100%;
+    height:100%;
+}
+
+.section6{
+  height: 550px;
+}
+
+.section6-div1{
+  transition:0.3s;
+}
+
+.section6-title{
+  padding: 40px 0px;
+  font-size: 27px;
+}
+
+.section6-content{
+  transition:0.3s;
+}
+
+.section6-content, .section8-p1{
+  margin-top: 20px;
+}
+
+.section6-title2{
+  margin: 13px 0px;
+  font-size: 20px;
+}
+
+.section6-p{
+  line-height: 18px;
+  margin-bottom: 12px;
+}
+
+.section6-para{
+  font-size: 11px;
+}
+
+.section6 a{
+  transition: all 0.2s;
+}
+
+.section6-div1:hover, .section8-part1 i:hover{
+ transform: scale(1.03);
+}
+
+ .section6 a:hover{
+  font-size: 14px;
+ }
+
+ .section7{
+   align-items: center;
+ }
+
+ .section7, .section8-part1{
+  justify-content: space-around;
+}
+
+ .section7-div1 a, .section8-part1 i{
+  transition: 0.5s;
+ }
+
+.section7-div1 p{
+ margin-top: 10px;
+ }
+
+ .section7-div1 .card{
+  text-align: center;
+  padding: 20px;
+}
+
+.section7-div1 .card p{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.section7-div1 .card p i{
+  font-size: 35px;
+}
+
+.section7-div1 .card p .i1{
+  visibility: hidden;
+}
+
+.section7-div1 .card p .i2,
+.section7-div1 .card p .i3{
+ position: absolute;
+ left: 0;
+ transition: 0.5s;
+ color:plum;
+} 
+
+.section7-div1 .card p .i3{
+  top: 120%;
+  color:purple;
+}
+
+.section7-div1 .card:hover p .i2,
+.section7-div1 .card:hover p .i3{
+ transform: translateY(-120%);
+}
+
+ .section8{
+  height: 410px;
+ }
+
+.section8-part1{
+  height: 70px;
+}
+
+.section8-part1, .section8-part2{
+  border-bottom: 1px solid white;
+}
+
+.section8-part1 .section8-part1-title{
+  margin-bottom: 11px;
+}
+
+.section8-div2 .section8-input{
+ width: 250px;   
+ height: 28px;
+ padding: 10px;
+ margin-right: 5px;
+}
+
+.section8-div2 input::placeholder{
+  padding: 0;
+  margin: 0;
+}
+
+.section8-btn{
+  padding: 7px 15px;
+  transition: 0.2s;
+}
+
+.section8-btn:hover, .section8-part2 a:hover{
+  transform: scale(1.1);
+}
+
+.section8-part1 i{
+  margin-left: 8px;
+}
+
+.section8-part2{
+  display: grid;
+  grid-template-columns: repeat(5,20%);
+  height: 270px;
+  border-bottom: 1px solid white;
+  padding-bottom: 50px;
+
+}
+
+.section8-div4{
+  margin-top: 60px;
+}
+
+.section8-i1{
+ margin-right: 10px;
+ font-size: 35px;
+}
+
+.section8-span1{
+  font-weight: bold;
+} 
+
+.section8-span2{
+  margin-left: 5px;
+}
+
+.section8-div5{
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 60px;
+}
+
+.section8-p1{
+  margin-top: 20px;
+}
+
+.section8-part2 a:hover, .section8-a2:hover{
+  text-decoration: underline;
+}
+
+.section8-a2{
+  display: inline-block;
+}
+
+.section8-a2:hover{
+  letter-spacing:1px;
+}
